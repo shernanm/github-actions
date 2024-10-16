@@ -16,4 +16,4 @@ jobs:
       - name: Define username variable
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Run script
-        run: node hello-world.js
+        run: node hola-mundo.js
