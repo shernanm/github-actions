@@ -12,7 +12,7 @@ on:
     inputs:
       lenguaje_favorito:
         description: 'Lenguaje favorito'
-        default: Javascript
+        default: 'Javascript'
         required: true
         type: choice
         options:
@@ -22,7 +22,7 @@ on:
       nombre:
         description: 'Tu nombre'
         required: true
-        default: John Doe
+        default: 'John Doe'
         type: string
   schedule:
     - cron: '15 22 * * *'
