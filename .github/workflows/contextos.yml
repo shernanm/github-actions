@@ -12,6 +12,6 @@ jobs:
     steps:
       - run: echo "Desplegando en la rama $GITHUB_REF"
   frutas:
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo 'La fruta1 es ${{env.fruta1}}, La fruta2 es ${{env.fruta2}}, La fruta3 es ${{env.fruta3}}'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'La fruta1 es ${{env.fruta1}}, La fruta2 es ${{env.fruta2}}, La fruta3 es ${{env.fruta3}}'
