@@ -1,0 +1,17 @@
+name: Contextos
+run-name: ¡Estoy aprendiendo a usar Contextos!
+on: [push, pull_request]
+env:
+  fruta1: Manzana
+  fruta2: Pera
+  fruta3: Sandia
+jobs:
+  check-main:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Desplegando en la rama $GITHUB_REF"
+  frutas:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'La fruta1 es ${{env.fruta1}}, La fruta2 es ${{env.fruta2}}, La fruta3 es ${{env.fruta3}}'
